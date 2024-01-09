@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  margin: auto;
+  padding: 10px 0;
+  position: fixed;
+  border-bottom: 2px solid rgb(0, 110, 255);
+  z-index: 1;
+}
+header nav .group-navbar {
+  width: 100%;
+  max-width: 1225px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header nav .group-navbar .logo .img-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .group-navbar .logo .img-logo h1 {
+  color: #fff;
+  font-weight: 200;
+}
+header nav .group-navbar .ul-links {
+  width: auto;
+}
+header nav .group-navbar .ul-links ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header nav .group-navbar .ul-links ul li {
+  width: auto;
+  margin: 5px;
+  border-left: 1px solid #fff;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+header nav .group-navbar .ul-links ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+header nav .group-navbar .social-links {
+  display: flex;
+}
+header nav .group-navbar .social-links ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header nav .group-navbar .social-links ul li {
+  width: auto;
+  border: 0;
+  margin: 5px;
+}
+header nav .group-navbar .social-links ul li a i {
+  color: #fff;
+  font-size: 20px;
+}
+header nav .group-navbar .button-link {
+  width: auto;
+}
+header nav .group-navbar .button-link a {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .group-navbar .button-link a label {
+  color: #fff;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: rgb(0, 110, 255);
+}
+
+main .banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cliente-tirando-oculos-na-loja-de-otica-com-a-ajuda-do-vendedor (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 110, 255);
+}
+main .banner .banner--group-text {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+main .banner .banner--group-text .banner--title {
+  margin-bottom: 30px;
+}
+main .banner .banner--group-text .banner--title h3 {
+  color: rgb(0, 110, 255);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+}
+main .banner .banner--group-text .banner--info h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .banner .banner--group-text .banner--info p {
+  color: rgb(0, 110, 255);
+  font-size: 18px;
+}
+main .banner .banner--group-text .banner--info .banner--info-icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+main .banner .banner--group-text .banner--info .banner--info-icon i {
+  font-size: 20px;
+  color: rgb(0, 110, 255);
+}
+main .banner .banner--group-text .banner--info .banner--info-icon p {
+  font-size: 20px;
+  color: #fff;
+}
+main section {
+  height: auto;
+}
+main section .cards--advertising {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 30px 0;
+}
+main section .cards--advertising .card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section .cards--advertising .card h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main section .cards--advertising .card i {
+  color: #fff;
+  font-size: 45px;
+  padding: 10px 0;
+}
+main section .cards--advertising .card h1 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+main section .cards--advertising .img1 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img2 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img3 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img4 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img5 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .card-photo {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  overflow: hidden;
+}
+main section .cards--advertising .card-photo img {
+  width: 100%;
+  height: inherit;
+  transition: all 0.5s;
+}
+main section .cards--advertising .card-photo img:hover {
+  width: 105%;
+  height: 105%;
+}
+main section .advertising--info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+main section .advertising--info .advertising--info--text p {
+  font-size: 16px;
+  color: rgb(0, 110, 255);
+}
+main section .advertising--info .advertising--info--text h1 {
+  color: #fff;
+  font-size: 50px;
+}
+main section .advertising--info .advertising--info--button a {
+  color: #fff;
+  padding: 15px 30px;
+  background-color: rgb(0, 110, 255);
+}
+main section .feedbacks-group {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid rgb(0, 110, 255);
+}
+main section .feedbacks-group .line {
+  width: 50px;
+  height: 30px;
+  margin: auto;
+  background-color: rgb(0, 110, 255);
+  margin-bottom: 40px;
+}
+main section .feedbacks-group .feedbacks--title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+main section .feedbacks-group .feedbacks--title h3 {
+  font-weight: 200;
+  color: rgb(0, 110, 255);
+  margin-bottom: 30px;
+}
+main section .feedbacks-group .feedbacks--title h1 {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+main section .feedbacks-group .feedback--cards {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+main section .feedbacks-group .feedback--cards .feedback--slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+main section .feedbacks-group .feedback--cards .feedback-left,
+main section .feedbacks-group .feedback--cards .feedback-right {
+  display: flex;
+  align-items: center;
+}
+main section .feedbacks-group .feedback--cards .feedback-left i,
+main section .feedbacks-group .feedback--cards .feedback-right i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+main section .feedbacks-group .feedback--cards .feedback--card {
+  width: 250px;
+  height: 200px;
+  background-color: rgb(0, 110, 255);
+}
+main section .feedbacks-group .feedback--cards .feedback--card img {
+  width: 100%;
+  height: 100%;
+}
+main section .feedbacks-group .feedback--cards .circle-group {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -50px;
+}
+main section .feedbacks-group .feedback--cards .circle-group .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+main section .feedbacks-group .feedback--cards .circle-group .active {
+  background-color: rgb(0, 110, 255);
+}
+main section .contact {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+main section .contact .contact--title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+main section .contact .contact--title h3 {
+  color: rgb(0, 110, 255);
+  font-weight: 200;
+}
+main section .contact .contact--title h1 {
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+main section .contact .contact--cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main section .contact .contact--cards .contact--card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .contact .contact--cards .contact--card .contact--card--image {
+  width: 100%;
+  height: 200px;
+}
+main section .contact .contact--cards .contact--card .contact--card--image img {
+  width: 100%;
+  height: 100%;
+}
+main section .contact .contact--cards .contact--card .card-line {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(0, 110, 255);
+  margin-bottom: 30px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text p {
+  color: #ccc;
+  text-transform: uppercase;
+}
+main section .contact .contact--cards .contact--card .contact--card--text a {
+  color: #fff;
+  padding: 10px 30px;
+  background-color: rgb(0, 110, 255);
+  margin-top: 30px;
+}
+main section .contact .contract--form {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+main section .contact .contract--form form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section .contact .contract--form form .group--input--row {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+main section .contact .contract--form form .group--input--row input,
+main section .contact .contract--form form .group--input--row textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #fff;
+}
+main section .contact .contract--form form .group--input--row button {
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+main .contact--map {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+main .contact--map .contact-map-i {
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1225px;
+  height: 200px;
+  margin: auto;
+}
+
+footer {
+  background-color: #fff;
+}
+footer .footer--group {
+  width: 60%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer--group .footer--logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 110, 255);
+}
+footer .footer--group p {
+  color: #ccc;
+}
+footer .footer--group .footer-social {
+  padding: 10px;
+}
+footer .footer--group .footer-social i {
+  color: rgb(0, 110, 255);
+  margin: 5px;
+  font-size: 20px;
+}
+footer .footer-bottom {
+  width: 100%;
+  background-color: rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+footer .footer-bottom p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
