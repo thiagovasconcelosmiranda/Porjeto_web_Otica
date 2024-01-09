@@ -24,24 +24,35 @@ main {
 
                 h3 {
                     color: rgb(0, 110, 255);
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 50px;
+                    font-weight: 800;
                     text-transform: uppercase;
-                    font-size: 40px;
-                    font-weight: 400;
+                    font-style: normal;
+                    text-decoration: none;
                 }
             }
 
             .banner--info {
                 h1 {
-                    color: #fff;
+                    color: #FBFBFB;
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 65px;
+                    font-weight: 800;
                     text-transform: uppercase;
-                    font-size: 60px;
-                    font-weight: 400;
-                    margin-bottom: 10px;
+                    font-style: normal;
+                    text-decoration: none;
                 }
 
                 p {
                     color: rgb(0, 110, 255);
-                    font-size: 18px;
+                    color: rgb(0, 110, 255);
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
                 }
 
                 .banner--info-icon {
@@ -67,13 +78,14 @@ main {
 
     section {
         height: auto;
+
         .cards--advertising {
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 100px;
+            gap: 30px;
             padding: 30px 0;
 
             .card {
@@ -83,6 +95,13 @@ main {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+
+                h2 {
+                    color: #fff;
+                    font-size: 35px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
 
                 h3 {
                     color: #fff;
@@ -143,10 +162,31 @@ main {
 
 
             .card-photo {
-                width: 300px;
-                height: 400px;
-                background-color: #fff;
+                width: 385px;
+                height: auto;
                 overflow: hidden;
+                position: relative;
+
+                .card-photo-info {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 30px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+
+                    h5 {
+                        display: inline-block;
+                        font-size: 18px;
+                        color: #fff;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding: 10px;
+                        background-color: rgba(0, 110, 255);
+                    }
+                }
 
                 img {
                     width: 100%;
@@ -169,21 +209,49 @@ main {
 
             .advertising--info--text {
                 p {
-                    font-size: 16px;
                     color: rgb(0, 110, 255);
+                    font-family: "Montserrat", Sans-serif;
+                    font-size: 22px;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-style: normal;
+                    text-decoration: none;
+                    line-height: 26px;
 
                 }
 
                 h1 {
-                    color: #fff;
-                    font-size: 50px;
+                    color: #FBFBFB;
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 65px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
                 }
             }
 
             .advertising--info--button a {
-                color: #fff;
                 padding: 15px 30px;
                 background-color: rgb(0, 110, 255);
+                font-family: "Archivo", Sans-serif;
+                font-size: 18px;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-style: normal;
+                text-decoration: none;
+                line-height: 1em;
+                letter-spacing: 0px;
+                word-spacing: 0em;
+                fill: #FFFFFF;
+                color: #FFFFFF;
+                transition: 0.5s;
+            }
+
+            .advertising--info--button a:hover {
+                background-color: transparent;
+                color: rgb(0, 110, 255);
+                border: 1px solid rgb(0, 110, 255);
             }
 
         }
@@ -210,73 +278,113 @@ main {
                 margin-bottom: 30px;
 
                 h3 {
-                    font-weight: 200;
                     color: rgb(0, 110, 255);
+                    font-family: "Montserrat", Sans-serif;
+                    font-size: 22px;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-style: normal;
+                    text-decoration: none;
+                    line-height: 26px;
                     margin-bottom: 30px;
                 }
 
                 h1 {
-                    font-size: 60px;
-                    color: #fff;
+                    color: #FBFBFB;
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 65px;
+                    font-weight: 800;
                     text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
                 }
             }
 
-            .feedback--cards {
+            .feedback-cards-group {
+                width: 100%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 position: relative;
 
-                .feedback--slider {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    overflow: hidden;
-                    padding: 10px;
-                }
-
-                .feedback-left,
-                .feedback-right {
-                    display: flex;
-                    align-items: center;
+                .feedback-card-right {
+                    width: auto;
+                    position: absolute;
+                    z-index: 1;
+                    left: 88%;
+                    top: 100px;
+                    cursor: pointer;
 
                     i {
-                        font-size: 30px;
+                        font-size: 40px;
                         color: #fff;
-                        cursor: pointer;
                     }
                 }
 
-                .feedback--card {
-                    width: 250px;
-                    height: 200px;
-                    background-color: rgb(0, 110, 255);
+                .feedback-card-left {
+                    width: auto;
+                    position: absolute;
+                    z-index: 2;
+                    left: 10%;
+                    top: 100px;
+                    cursor: pointer;
+                    cursor: pointer;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
+                    i {
+                        font-size: 40px;
+                        color: #fff;
+
                     }
-
                 }
 
-                .circle-group {
-                    width: 100%;
-                    gap: 10px;
+                .feedback--cards {
+                    max-width: 75%;
                     display: flex;
                     justify-content: center;
-                    position: absolute;
-                    bottom: -50px;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+
+                    .feedback--slider {
+                        width: 2300px;
+                        display: flex;
+                        gap: 30px;
+                        padding: 10px;
+                        transition: 0.8s;
+                        margin-left: 10px;
+                    }
+
+                    .feedback--card {
+                        width: 300px;
+                        height: 200px;
+                        background-color: rgb(0, 110, 255);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .feedback-card-circle {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    .active-circle{
+                        color: rgb(0, 110, 255);
+                     }
 
                     .circle {
                         width: 10px;
                         height: 10px;
-                        border-radius: 50%;
                         background-color: #fff;
+                        border-radius: 50%;
                     }
-
-                    .active {
-                        background-color: rgb(0, 110, 255)
-                    }
+                   
                 }
             }
         }
@@ -297,14 +405,24 @@ main {
 
                 h3 {
                     color: rgb(0, 110, 255);
-                    font-weight: 200;
+                    font-family: "Montserrat", Sans-serif;
+                    font-size: 22px;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-style: normal;
+                    text-decoration: none;
+                    line-height: 26px;
 
                 }
 
                 h1 {
-                    color: #fff;
-                    font-size: 70px;
+                    color: #FBFBFB;
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 65px;
+                    font-weight: 800;
                     text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
                 }
             }
 
@@ -321,6 +439,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    position: relative;
 
                     .contact--card--image {
                         width: 100%;
@@ -348,8 +467,14 @@ main {
 
                         h1 {
                             color: #fff;
-                            text-transform: uppercase;
-                            font-size: 18px;
+                            font-family: "Archivo", Sans-serif;
+                            font-size: 24px;
+                            font-weight: 800;
+                            text-transform: capitalize;
+                            font-style: normal;
+                            text-decoration: none;
+                            line-height: 1em;
+                            letter-spacing: 1px;
                         }
 
                         p {
@@ -358,16 +483,32 @@ main {
                         }
 
                         a {
-                            color: #fff;
-                            padding: 10px 30px;
+                            padding: 15px 30px;
                             background-color: rgb(0, 110, 255);
-                            margin-top: 30px;
+                            font-family: "Archivo", Sans-serif;
+                            font-size: 18px;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            font-style: normal;
+                            text-decoration: none;
+                            line-height: 1em;
+                            letter-spacing: 0px;
+                            word-spacing: 0em;
+                            fill: #FFFFFF;
+                            color: #FFFFFF;
+                            transition: .4s;
+                        }
+
+                        a:hover {
+                            background-color: transparent;
+                            color: rgb(0, 110, 255);
+                            border: 1px solid rgb(0, 110, 255);
                         }
                     }
                 }
             }
 
-            .contract--form {
+            .contact--form {
                 width: 100%;
                 height: auto;
                 padding: 20px 0;
@@ -394,24 +535,41 @@ main {
                             border-radius: 5px;
                             margin-top: 30px;
                             color: #fff;
+                            outline: none;
                         }
 
                         button {
                             width: 100%;
                             padding: 10px 0;
-                            text-transform: uppercase;
+                            padding: 15px 30px;
                             background-color: rgb(0, 110, 255);
-                            color: #fff;
-                            border-radius: 3px;
-                            margin-bottom: 40px;
+                            font-family: "Archivo", Sans-serif;
+                            font-size: 18px;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            font-style: normal;
+                            text-decoration: none;
+                            line-height: 1em;
+                            letter-spacing: 0px;
+                            word-spacing: 0em;
+                            fill: #FFFFFF;
+                            color: #FFFFFF;
                             margin-top: 30px;
+                            transition: .4s;
+                        }
+
+                        button:hover {
+                            background-color: transparent;
+                            color: rgb(0, 110, 255);
+                            border: 1px solid rgb(0, 110, 255);
                         }
                     }
                 }
             }
-        }  
-    } 
-    .contact--map{
+        }
+    }
+
+    .contact--map {
         width: 100%;
         height: auto;
         background-color: #fff;
@@ -420,10 +578,9 @@ main {
         align-items: center;
         padding: 30px 0;
 
-        .contact-map-i{
+        .contact-map-i {
             width: 100%;
             height: 400px;
-
         }
     }
 }
@@ -434,9 +591,11 @@ main {
     height: 200px;
     margin: auto;
 }
-footer{
+
+footer {
     background-color: #fff;
-    .footer--group{
+
+    .footer--group {
         width: 60%;
         height: 300px;
         margin: auto;
@@ -446,7 +605,7 @@ footer{
         align-items: center;
         gap: 30px;
 
-        .footer--logo{
+        .footer--logo {
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -456,28 +615,203 @@ footer{
             align-items: center;
             color: rgb(0, 110, 255);
         }
-        p{
+
+        p {
             color: #ccc;
         }
-        .footer-social{
+
+        .footer-social {
             padding: 10px;
-            i{
+
+            i {
                 color: rgb(0, 110, 255);
                 margin: 5px;
                 font-size: 20px;
             }
         }
     }
-    .footer-bottom{
-      width: 100%;
-      background-color: rgb(0, 110, 255);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
-      p{
-         color: #fff;
-      }
+
+    .footer-bottom {
+        width: 100%;
+        background-color: rgb(0, 110, 255);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width:700px) and (max-width: 1000px) {
+    main {
+
+        .banner {
+            .banner--group-text {
+                width: 90%;
+
+                .banner--info {
+                    p {
+                        font-size: 30px;
+                    }
+
+                    .banner--info-icon {
+                        i {
+                            font-size: 30px;
+                        }
+
+                        p {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        section {
+
+            .cards--advertising {
+                gap: 10px;
+
+                .card h1 {
+                    font-size: 0px;
+                    font-weight: 0;
+                }
+            }
+
+            .advertising--info {
+                width: 100%;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .cards--advertising {
+                gap: 50px;
+                background-color: transparent;
+
+                .card-photo {
+                    width: 90%;
+                    height: auto;
+                    background-color: #fff;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+
+        .banner {
+            .banner--group-text {
+                width: 90%;
+
+                .banner--info {
+                    p {
+                        font-size: 18px;
+                    }
+
+                    h1 {
+                        font-size: 30px;
+
+                    }
+
+                    .banner--info-icon {
+
+                        i,
+                        p {
+                            font-size: 18px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        section {
+            .cards--advertising {
+                gap: 10px;
+
+                .card {
+                    width: 90%;
+                    height: 250px;
+
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 0;
+                        color: #FBFBFB;
+                        font-family: "Archivo", Sans-serif;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-style: normal;
+                        text-decoration: none;
+                    }
+
+                    h2 {
+                        font-size: 50px;
+                        font-weight: 0;
+                        color: #FBFBFB;
+                        font-family: "Archivo", Sans-serif;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-style: normal;
+                        text-decoration: none;
+                    }
+
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .advertising--info {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                flex-direction: column;
+                gap: 30px;
+
+            }
+
+            .cards--advertising {
+                gap: 50px;
+                background-color: transparent;
+
+                .card-photo {
+                    width: 90%;
+                    height: auto;
+                    background-color: #fff;
+                    overflow: hidden;
+                }
+            }
+
+            .feedbacks-group .feedbacks--title h1 {
+                font-size: 40px;
+            }
+
+            .contact .contact--title h1 {
+                font-size: 50px;
+            }
+
+            .contact {
+                .contact--cards .contact--card {
+                    height: auto;
+                }
+
+                .contact--form form .group--input--row {
+                    flex-direction: column;
+                }
+            }
+        }
     }
 }
