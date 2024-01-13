@@ -72,6 +72,9 @@ header nav .group-navbar .ul-links ul li a {
 header nav .group-navbar .ul-links ul li a:hover {
   color: rgb(0, 110, 255);
 }
+header nav .group-navbar .ul-links ul li:nth-last-child(4) {
+  border-left: 0;
+}
 header nav .group-navbar .social-links {
   display: flex;
 }
@@ -309,10 +312,6 @@ main section .cards--advertising .card-photo img {
   height: inherit;
   transition: all 0.5s;
 }
-main section .cards--advertising .card-photo img:hover {
-  width: 105%;
-  height: 105%;
-}
 main section .advertising--info {
   width: 100%;
   display: flex;
@@ -360,7 +359,7 @@ main section .advertising--info .advertising--info--button a:hover {
   border: 1px solid rgb(0, 110, 255);
 }
 main section .feedbacks-group {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   border: 1px solid rgb(0, 110, 255);
 }

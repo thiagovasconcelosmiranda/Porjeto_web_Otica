@@ -129,7 +129,6 @@ main {
                     linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)),
                     url('../images/mulheres_oculos.jpg');
                 background-size: cover;
-
             }
 
             .img2 {
@@ -159,7 +158,6 @@ main {
                     url('../images/mulheres_oculos.jpg');
                 background-size: cover;
             }
-
 
             .card-photo {
                 width: 385px;
@@ -193,11 +191,6 @@ main {
                     height: inherit;
                     transition: all 0.5s;
                 }
-
-                img:hover {
-                    width: 105%;
-                    height: 105%;
-                }
             }
         }
 
@@ -217,7 +210,6 @@ main {
                     font-style: normal;
                     text-decoration: none;
                     line-height: 26px;
-
                 }
 
                 h1 {
@@ -253,11 +245,10 @@ main {
                 color: rgb(0, 110, 255);
                 border: 1px solid rgb(0, 110, 255);
             }
-
         }
 
         .feedbacks-group {
-            width: 100%;
+            width: 90%;
             height: 100vh;
             border: 1px solid rgb(0, 110, 255);
 
@@ -334,7 +325,6 @@ main {
                     i {
                         font-size: 40px;
                         color: #fff;
-
                     }
                 }
 
@@ -374,9 +364,10 @@ main {
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    .active-circle{
+
+                    .active-circle {
                         color: rgb(0, 110, 255);
-                     }
+                    }
 
                     .circle {
                         width: 10px;
@@ -384,7 +375,7 @@ main {
                         background-color: #fff;
                         border-radius: 50%;
                     }
-                   
+
                 }
             }
         }
@@ -412,7 +403,6 @@ main {
                     font-style: normal;
                     text-decoration: none;
                     line-height: 26px;
-
                 }
 
                 h1 {
@@ -668,14 +658,10 @@ footer {
                         }
                     }
                 }
-
-
             }
-
         }
 
         section {
-
             .cards--advertising {
                 gap: 10px;
 
@@ -729,8 +715,6 @@ footer {
                         p {
                             font-size: 18px;
                         }
-
-
                     }
                 }
             }
