@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,22 +50,22 @@
     </header>
     <main>
         <section id="inicio">
-        <div class="banner">
-            <div class="banner--group-text">
-                <div class="banner--title">
-                    <h3>Confira</h3>
-                </div>
-                <div class="banner--info">
-                    <h1>Compre sem sair de Casa</h1>
-                    <p>São mais de 2000. modelos</p>
-                    <div class="banner--info-icon">
-                        <i class="fa-solid fa-truck"></i>
-                        <p>Frete grátis</p>
+            <div class="banner">
+                <div class="banner--group-text">
+                    <div class="banner--title">
+                        <h3>Confira</h3>
+                    </div>
+                    <div class="banner--info">
+                        <h1>Compre sem sair de Casa</h1>
+                        <p>São mais de 2000. modelos</p>
+                        <div class="banner--info-icon">
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Frete grátis</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
         <section id="modelos">
             <div class="cards--advertising container hidden">
                 <div class="card img1 hidden">
@@ -201,18 +202,38 @@
                     <div class="contact--form container hidden">
                         <form method="post" action="">
                             <div class="group--input--row">
-                                <input type="text" placeholder="NOME">
-                                <input type="text" placeholder="SOBRE NOME">
+                                <div class="input--error">
+                                    <input type="text" name="firstName" id="1" placeholder="NOME">
+                                    <div class="legend"><p>*</p></div>
+                                    <span id="error-1">Campos obrigatório</span>
+                                </div>
+                                <div class="input--error">
+                                    <input type="text" name="lastName" id="2" placeholder="SOBRE NOME">
+                                    <div class="legend"><p>*</p></div>
+                                    <span id="error-2">Campos obrigatório</span>
+                                </div>
                             </div>
                             <div class="group--input--row">
-                                <input type="text" placeholder="NOME">
-                                <input type="text" placeholder="SOBRE NOME">
+                                <div class="input--error">
+                                    <input type="email" id="3" name="email" placeholder="EMAIL">
+                                    <div class="legend"><p>*</p></div>
+                                    <span id="error-3">Campos obrigatório</span>
+                                </div>
+                                <div class="input--error">
+                                    <input type="text" name="phone" id="4" placeholder="CELULAR">
+                                    <div class="legend"><p>*</p></div>
+                                    <span id="error-4">Campos obrigatório</span>
+                                </div>
                             </div>
                             <div class="group--input--row">
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <div class="input--error">
+                                    <textarea name="descrition" id="5"  placeholder="DESCRIÇÃO" cols="30" rows="10"></textarea>
+                                    <div class="legend"><p>*</p></div>
+                                    <span id="error-5">Campos obrigatório</span>
+                                </div>
                             </div>
                             <div class="group--input--row">
-                                <button>Enviar</button>
+                                <button id="button--contact" type="button">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -244,9 +265,16 @@
             <p>@ 2024 All Rights Reserved</p>
         </div>
     </footer>
+    <div class="whatsapp">
+        <a target="_blank" href="https://wa.me//5514997087974?text=Tenho%20interesse%20em%20comprar%20seus%20produtos">
+            <img src="assets/images/whatsapp1.png" alt="">
+        </a>
+    </div>
     <script src="assets/js/scroll.js" type="text/javascript"></script>
     <script defer src="assets/js/scroll-animate.js"></script>
     <script defer src="assets/js/slider-banner.js"></script>
+    <script defer src="assets/js/form-input-error.js"></script>
+
 </body>
 
 </html>
