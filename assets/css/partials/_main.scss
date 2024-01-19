@@ -78,7 +78,7 @@ main {
 
     .hidden {
         opacity: 0;
-        transition: all 1s;
+        transition: all 0.8s;
         filter: blur(-5px);
         transform: translateX(-100%);
     }
@@ -88,11 +88,9 @@ main {
         filter: blur(0);
         transform: translateX(0);
     }
-
+    
     section {
         .cards--advertising {
-
-
             .card:nth-child(5) {
                 transition-delay: 200ms;
             }
@@ -127,10 +125,9 @@ main {
             }
         }
     }
-
+    
     section {
         height: auto;
-
         .cards--advertising {
             width: 100%;
             height: auto;
@@ -254,7 +251,10 @@ main {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin-top: 100px;
+            padding-left:20px;
+            padding-right:20px;
 
             .advertising--info--text {
                 p {
@@ -305,9 +305,8 @@ main {
 
         .feedbacks-group {
             width: 90%;
-            height: 100vh;
+            height: auto;
             border: 1px solid rgb(0, 110, 255);
-            overflow: hidden;
 
             .line {
                 width: 50px;
@@ -355,14 +354,18 @@ main {
                 align-items: center;
                 flex-direction: column;
                 position: relative;
-
+                display: flex;
+                justify-content: center;
+               
                 .feedback-card-right {
                     width: auto;
-                    position: absolute;
                     z-index: 1;
-                    left: 88%;
-                    top: 100px;
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    top: auto;
                     cursor: pointer;
+                    padding-right: 25px;
 
                     i {
                         font-size: 40px;
@@ -371,13 +374,14 @@ main {
                 }
 
                 .feedback-card-left {
-                    width: auto;
+                    width: 30px;
+                    height: auto;
                     position: absolute;
-                    z-index: 2;
-                    left: 10%;
-                    top: 100px;
+                    left:0;
+                    right:auto;
+                    top: auto;
                     cursor: pointer;
-                    cursor: pointer;
+                    padding-left: 25px;
 
                     i {
                         font-size: 40px;
@@ -399,7 +403,8 @@ main {
                         gap: 30px;
                         padding: 10px;
                         transition: 0.8s;
-                        margin-left: 10px;
+                        margin-left: auto;
+                       
                     }
 
                     .feedback--card {
@@ -624,6 +629,7 @@ main {
                             line-height: 1em;
                             letter-spacing: 0px;
                             word-spacing: 0em;
+                            border: 0;
                             fill: #FFFFFF;
                             color: #FFFFFF;
                             margin-top: 30px;
@@ -650,7 +656,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px 0;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .contact-map-i {
             width: 100%;
@@ -720,9 +729,28 @@ footer {
     }
 }
 
+
+.whatsapp{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    right: 10px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a img{
+       height: 50px;
+       transition: all 1s;
+       position: relative;
+    }
+  }
+  a img:hover{
+      transform: scale(1.3) ;
+  }
+
 @media (min-width:700px) and (max-width: 1000px) {
     main {
-
         .banner {
             .banner--group-text {
                 width: 90%;
@@ -758,7 +786,8 @@ footer {
             .advertising--info {
                 width: 100%;
                 align-items: center;
-                padding: 20px;
+                padding: 0 30px;
+        
             }
 
             .cards--advertising {
@@ -883,23 +912,7 @@ footer {
         }
     }
 }
-.whatsapp{
-  width: 100px;
-  height: 100px;
-  position:fixed;
-  right: 10px;
-  bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a img{
-     height: 50px;
-     transition: all 1s;
-     position: relative;
-  }
-}
-a img:hover{
-    transform: scale(1.3) ;
-}
+
+
 
 

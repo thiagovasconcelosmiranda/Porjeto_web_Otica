@@ -112,7 +112,7 @@ header nav .group-navbar .button-link .button:hover p {
   color: rgb(0, 110, 255);
 }
 
-@media (min-width: 700px) and (max-width: 1000px) {
+@media (min-width: 700px) {
   header nav .group-navbar {
     padding: 0px 20px;
   }
@@ -222,7 +222,7 @@ main .banner .banner--group-text .banner--info .banner--info-icon p {
 }
 main .hidden {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.8s;
   filter: blur(-5px);
   transform: translateX(-100%);
 }
@@ -356,7 +356,10 @@ main section .advertising--info {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 main section .advertising--info .advertising--info--text p {
   color: rgb(0, 110, 255);
@@ -400,9 +403,8 @@ main section .advertising--info .advertising--info--button a:hover {
 }
 main section .feedbacks-group {
   width: 90%;
-  height: 100vh;
+  height: auto;
   border: 1px solid rgb(0, 110, 255);
-  overflow: hidden;
 }
 main section .feedbacks-group .line {
   width: 50px;
@@ -446,27 +448,32 @@ main section .feedbacks-group .feedback-cards-group {
   align-items: center;
   flex-direction: column;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 main section .feedbacks-group .feedback-cards-group .feedback-card-right {
   width: auto;
-  position: absolute;
   z-index: 1;
-  left: 88%;
-  top: 100px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: auto;
   cursor: pointer;
+  padding-right: 25px;
 }
 main section .feedbacks-group .feedback-cards-group .feedback-card-right i {
   font-size: 40px;
   color: #fff;
 }
 main section .feedbacks-group .feedback-cards-group .feedback-card-left {
-  width: auto;
+  width: 30px;
+  height: auto;
   position: absolute;
-  z-index: 2;
-  left: 10%;
-  top: 100px;
+  left: 0;
+  right: auto;
+  top: auto;
   cursor: pointer;
-  cursor: pointer;
+  padding-left: 25px;
 }
 main section .feedbacks-group .feedback-cards-group .feedback-card-left i {
   font-size: 40px;
@@ -486,7 +493,7 @@ main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--
   gap: 30px;
   padding: 10px;
   transition: 0.8s;
-  margin-left: 10px;
+  margin-left: auto;
 }
 main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--card {
   width: 300px;
@@ -685,6 +692,7 @@ main section .contact .contact--form form .group--input--row button {
   line-height: 1em;
   letter-spacing: 0px;
   word-spacing: 0em;
+  border: 0;
   fill: #FFFFFF;
   color: #FFFFFF;
   margin-top: 30px;
@@ -704,7 +712,10 @@ main .contact--map {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 main .contact--map .contact-map-i {
   width: 100%;
@@ -765,6 +776,26 @@ footer .footer-bottom p {
   color: #fff;
 }
 
+.whatsapp {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp a img {
+  height: 50px;
+  transition: all 1s;
+  position: relative;
+}
+
+a img:hover {
+  transform: scale(1.3);
+}
+
 @media (min-width: 700px) and (max-width: 1000px) {
   main .banner .banner--group-text {
     width: 90%;
@@ -788,7 +819,7 @@ footer .footer-bottom p {
   main section .advertising--info {
     width: 100%;
     align-items: center;
-    padding: 20px;
+    padding: 0 30px;
   }
   main section .cards--advertising {
     gap: 50px;
@@ -876,23 +907,4 @@ footer .footer-bottom p {
   main section .contact .contact--form form .group--input--row {
     flex-direction: column;
   }
-}
-.whatsapp {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  right: 10px;
-  bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.whatsapp a img {
-  height: 50px;
-  transition: all 1s;
-  position: relative;
-}
-
-a img:hover {
-  transform: scale(1.3);
 }/*# sourceMappingURL=style.css.map */

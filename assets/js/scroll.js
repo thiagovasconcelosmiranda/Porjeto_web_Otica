@@ -18,14 +18,7 @@ function scrollToIdOnclick(event) {
 }
 
 function scrollToPosition(to) {
-    /*
-    window.scroll({
-        top: to - 110,
-        behavior: "smooth"
-    });
-    */
-
-    smoothScrollTo(0, to- 110)
+    smoothScrollTo(0, to-110)
 }
 
 function smoothScrollTo(endX, endY, duration) {
