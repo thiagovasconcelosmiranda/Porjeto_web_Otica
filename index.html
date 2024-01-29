@@ -140,16 +140,25 @@
                     <div class="feedback--cards">
                         <div class="feedback--slider">
                             <div class="feedback--card">
-                                <img
-                                    src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
                             </div>
                             <div class="feedback--card">
-                                <img
-                                    src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
                             </div>
                             <div class="feedback--card">
-                                <img
-                                    src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                            </div>
+                            <div class="feedback--card">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                            </div>
+                            <div class="feedback--card">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                            </div>
+                            <div class="feedback--card">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
+                            </div>
+                            <div class="feedback--card">
+                                <img src="assets/images/homem-usando-smartphone-para-dar-feedback-em-ambientes-fechados-revisao-do-cliente_495423-40681.jpg">
                             </div>
                         </div>
                         <div class="circle-group">
@@ -161,11 +170,10 @@
                     <div class="feedback-card-left">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
-                    <div class="feedback-card-circle">
-                        <div class="circle active-circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
+                    <div class="feedback-card-circle"></div>
+                </div>
+                <div class="feedback-card-button">
+                    <button>Novo comentário</button>
                 </div>
             </div>
         </section>
@@ -260,6 +268,48 @@
                 </div>
             </div>
         </section>
+        <!--Modal-feedback-->
+        <div class="modal--feedback">
+            <div class="modal--feedback-info">
+                <div class="modal--feedback-title">
+                    <h2>Feedback</h2>
+                </div>
+                <div class="close-i">
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </div>
+               <form method="POST" action="">
+                <div class="input-group">
+                    <div class="input-error">
+                        <label for="6">
+                            <i class="fa-regular fa-image"></i>
+                        </label>
+                        <input id="6" type="file" onchange="upload()">
+                        <span id="msg-6">Campos obrigatório</span>
+                    </div>
+                   
+                </div>
+                    <div class="input-group">
+                        <div class="input-error">
+                            <input type="text" name="name" id="7" placeholder="NOME">
+                            <span id="msg-7">Campos obrigatório</span>
+                        </div>
+                        <div class="input-error">
+                            <input type="email" id="8" name="email" placeholder="EMAIL">
+                            <span id="msg-8">Campos obrigatório</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-error">
+                            <textarea name="descrition" placeholder="DESCRIÇÃO" id="9" cols="10" rows="10"></textarea>
+                            <span id="msg-9">Campos obrigatório</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <button id="button-feedback" type="button">Enviar</button>
+                    </div>
+               </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer--group">
@@ -283,8 +333,10 @@
     </div>
     <script src="assets/js/scroll.js" type="text/javascript"></script>
     <script defer src="assets/js/scroll-animate.js"></script>
-    <script defer src="assets/js/slider-banner.js"></script>
+    <script defer src="assets/js/slide-banner.js"></script>
     <script defer src="assets/js/form-input-error.js"></script>
+    <script defer src="assets/js/slide-feedback.js"></script>
+    <script defer src="assets/js/modal-slide.js"></script>
 
 </body>
 

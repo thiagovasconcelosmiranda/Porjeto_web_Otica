@@ -88,7 +88,7 @@ main {
         filter: blur(0);
         transform: translateX(0);
     }
-    
+
     section {
         .cards--advertising {
             .card:nth-child(5) {
@@ -125,9 +125,10 @@ main {
             }
         }
     }
-    
+
     section {
         height: auto;
+
         .cards--advertising {
             width: 100%;
             height: auto;
@@ -241,7 +242,8 @@ main {
                     height: inherit;
                     transition: all 0.5s;
                 }
-                img:hover{
+
+                img:hover {
                     transform: scale(1.1);
                 }
             }
@@ -253,8 +255,8 @@ main {
             justify-content: space-between;
             align-items: center;
             margin-top: 100px;
-            padding-left:20px;
-            padding-right:20px;
+            padding-left: 20px;
+            padding-right: 20px;
 
             .advertising--info--text {
                 p {
@@ -356,7 +358,7 @@ main {
                 position: relative;
                 display: flex;
                 justify-content: center;
-               
+
                 .feedback-card-right {
                     width: auto;
                     z-index: 1;
@@ -377,8 +379,8 @@ main {
                     width: 30px;
                     height: auto;
                     position: absolute;
-                    left:0;
-                    right:auto;
+                    left: 0;
+                    right: auto;
                     top: auto;
                     cursor: pointer;
                     padding-left: 25px;
@@ -392,7 +394,6 @@ main {
                 .feedback--cards {
                     max-width: 75%;
                     display: flex;
-                    justify-content: center;
                     align-items: center;
                     position: relative;
                     overflow: hidden;
@@ -400,11 +401,9 @@ main {
                     .feedback--slider {
                         width: 2300px;
                         display: flex;
-                        gap: 30px;
+                        gap: 10px;
                         padding: 10px;
                         transition: 0.8s;
-                        margin-left: auto;
-                       
                     }
 
                     .feedback--card {
@@ -427,17 +426,52 @@ main {
                     align-items: center;
                     gap: 10px;
 
-                    .active-circle {
-                        color: rgb(0, 110, 255);
-                    }
-
-                    .circle {
+                    div {
                         width: 10px;
                         height: 10px;
                         background-color: #fff;
                         border-radius: 50%;
+                        cursor: pointer;
                     }
 
+                    .active {
+                        background-color: rgb(0, 110, 255);
+                    }
+
+                }
+            }
+
+            .feedback-card-button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 20px 0;
+
+                button {
+                    padding: 10px;
+                    padding: 15px 30px;
+                    background-color: rgb(0, 110, 255);
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 18px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    word-spacing: 0em;
+                    fill: #FFFFFF;
+                    color: #FFFFFF;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    border: 0;
+                    outline: none;
+                }
+
+                button:hover {
+                    background-color: transparent;
+                    color: rgb(0, 110, 255);
+                    border: 1px solid rgb(0, 110, 255);
                 }
             }
         }
@@ -577,14 +611,17 @@ main {
                         display: flex;
                         justify-content: center;
                         gap: 20px;
-                        .input--error{
+
+                        .input--error {
                             width: 100%;
                             height: auto;
                             position: relative;
                             gap: 10px;
-                            .input-error{
+
+                            .input-error {
                                 border: 1px solid red;
                             }
+
                             input,
                             textarea {
                                 width: 100%;
@@ -597,23 +634,25 @@ main {
                                 outline: none;
                                 margin-bottom: 10px;
                             }
-                            span{
+
+                            span {
                                 color: red;
                                 visibility: hidden;
                             }
-                            .legend{
-                              
+
+                            .legend {
+
                                 position: absolute;
                                 right: -10px;
                                 top: 30px;
-                                
-                                p{
+
+                                p {
                                     color: red;
                                     font-size: 30px;
                                 }
                             }
                         }
-                      
+
 
                         button {
                             width: 100%;
@@ -656,7 +695,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:20px;
+        padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -664,6 +703,153 @@ main {
         .contact-map-i {
             width: 100%;
             height: 400px;
+        }
+    }
+
+    .modal--feedback {
+        width: 100%;
+        height: 100vh;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        position: fixed;
+        top: 0;
+        margin: auto;
+        display: none;
+        align-items: center;
+        z-index: 3;
+
+        .modal--feedback-info {
+            width: 40%;
+            height: 100%;
+            max-height: 80%;
+            margin-top: 60px;
+            border-radius: 10px;
+            background-color: #1B252F;
+            border: 1px solid rgb(0, 110, 255);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 20px;
+            position: relative;
+            padding: 20px 20px;
+            margin-top: 10%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            margin: auto;
+
+            .modal--feedback-title {
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                font-family: "Archivo", Sans-serif;
+                font-size: 14px;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-style: normal;
+                text-decoration: none;
+            }
+
+            .close-i {
+                position: absolute;
+                top: 5px;
+                right: 3%;
+
+                i {
+                    color: rgb(0, 110, 255);
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            .input-group {
+                width: 100%;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                span {
+                    color: red;
+                    font-size: 12px;
+                    visibility: hidden;
+                }
+
+                label i {
+                    color: rgb(0, 110, 255);
+                    font-size: 50px;
+                    cursor: pointer;
+                    margin: auto;
+                }
+
+                .input-error {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .error {
+                        border-bottom: 1px solid red;
+                    }
+
+                    .errorTextarea {
+                        border: 1px solid red;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: 10px 5px;
+                        background-color: transparent;
+                        border: 0;
+                        outline: none;
+                        border-bottom: 2px solid rgb(0, 110, 255);
+                        color: #fff;
+                    }
+
+                    textarea {
+                        height: 40px;
+                        border: 2px solid rgb(0, 110, 255);
+                    }
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+
+                button {
+                    width: 50%;
+                    padding: 10px 20px;
+                    background-color: rgb(0, 110, 255);
+                    font-family: "Archivo", Sans-serif;
+                    font-size: 16px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-style: normal;
+                    text-decoration: none;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    word-spacing: 0em;
+                    border: 0;
+                    fill: #FFFFFF;
+                    color: #FFFFFF;
+                    margin-top: 30px;
+                    transition: .4s;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: transparent;
+                    border: 1px solid rgb(0, 110, 255);
+                }
+            }
         }
     }
 }
@@ -730,26 +916,28 @@ footer {
 }
 
 
-.whatsapp{
+.whatsapp {
     width: 100px;
     height: 100px;
-    position:fixed;
+    position: fixed;
     right: 10px;
     bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    a img{
-       height: 50px;
-       transition: all 1s;
-       position: relative;
-    }
-  }
-  a img:hover{
-      transform: scale(1.3) ;
-  }
 
-@media (min-width:700px) and (max-width: 1000px) {
+    a img {
+        height: 50px;
+        transition: all 1s;
+        position: relative;
+    }
+}
+
+a img:hover {
+    transform: scale(1.3);
+}
+
+@media (min-width:700px) and (max-width: 1100px) {
     main {
         .banner {
             .banner--group-text {
@@ -787,7 +975,7 @@ footer {
                 width: 100%;
                 align-items: center;
                 padding: 0 30px;
-        
+
             }
 
             .cards--advertising {
@@ -802,12 +990,15 @@ footer {
                 }
             }
         }
+
+        .modal--feedback .modal--feedback-info {
+            width: 80%;
+        }
     }
 }
 
 @media (max-width: 700px) {
     main {
-
         .banner {
             .banner--group-text {
                 width: 90%;
@@ -819,7 +1010,6 @@ footer {
 
                     h1 {
                         font-size: 30px;
-
                     }
 
                     .banner--info-icon {
@@ -910,9 +1100,10 @@ footer {
                 }
             }
         }
+
+        .modal--feedback .modal--feedback-info {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
-
-
-
-
